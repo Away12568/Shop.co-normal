@@ -11,18 +11,17 @@ const Header = () => {
   const closeMenu = () => {
     setIsActive(false)
   }
-
   return (
     <>
       <header className={s.header}>
         <div className="container">
           <nav className={s.nav}>
             <img className={s.burger} onClick={toggleMenu} src="/burger-img.svg" alt="" />
-            <Link to={'/'} className={s.logo}>
+            <Link onClick={closeMenu} to={'/'} className={s.logo}>
               SHOP.CO
             </Link>
             <div className={`${s.menu} ${isActive ? s.active : null}`}>
-              <Link onClick={closeMenu} to={'/shop  '} className={s.dropDown}>
+              <Link onClick={closeMenu} to={'/shop'} className={s.dropdown}>
                 Shop
                 <svg
                   width="16"
@@ -37,13 +36,12 @@ const Header = () => {
                   />
                 </svg>
                 <div>
-                  <Link to={"/"} >Casual</Link>
-                  <Link to={"/"} >Formal</Link>
-                  <Link to={"/"} >Party</Link>
-                  <Link to={"/"} >Gym</Link>
+                  <Link to={'/'}>Casual</Link>
+                  <Link to={'/'}>Party</Link>
+                  <Link to={'/'}>Formal</Link>
+                  <Link to={'/'}>GYM</Link>
                 </div>
                 </Link>
-
               <Link onClick={closeMenu} to={'/'}>On Sale</Link>
               <Link onClick={closeMenu} to={'/'}>New Arrivals</Link>
               <Link onClick={closeMenu} to={'/'}>Brands</Link>
