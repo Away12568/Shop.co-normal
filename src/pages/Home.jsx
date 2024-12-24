@@ -1,24 +1,17 @@
-import React from 'react';
-import Hero from '../components/Hero/Hero';
-import Brand from '../components/brands/Brand';
-import Category from '../components/category/Category';
-import Browse from '../components/browse/Browse';
-import Happy from '../components/Happy/Happy';
-import Stay from '../components/stay/Stay';
+import React from 'react'
+import About from '../components/About/About'
+
+import Affordable from '../components/Affordable/Affordable'
 
 const Home = () => {
   return (
     <>
-     
-      <Hero />
-      <Brand/>
-      <Category/>
-      <Browse/>
-      <Happy/>
-      <Stay/>
-      
-    </>
-  );
-};
 
-export default Home;
+
+    <About/>
+    <Affordable/>
+    </>
+  )
+}
+
+export default Home
